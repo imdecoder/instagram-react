@@ -1,7 +1,7 @@
 import { Image } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-const Tab = createBottomTabNavigator();
+import styles from './styles';
 
 import HomeScreen from './screens/Home';
 import SearchScreen from './screens/Search';
@@ -13,8 +13,14 @@ import {
 	Home,
 	HomeFilled,
 	Search,
-	SearchFilled
-} from './Icons';
+	SearchFilled,
+	Reel,
+	ReelFilled,
+	Shop,
+	ShopFilled
+} from './consts/Icons';
+
+const Tab = createBottomTabNavigator();
 
 function Screens() {
 	return (
@@ -32,9 +38,9 @@ function Screens() {
 				options={{
 					tabBarIcon: ({ focused, color }) => {
 						if (focused) {
-							return <Home size={30} fill={color} />
-						} else {
 							return <HomeFilled size={30} fill={color} />
+						} else {
+							return <Home size={30} fill={color} />
 						}
 					}
 				}}
@@ -55,10 +61,28 @@ function Screens() {
 			<Tab.Screen
 				name="reel"
 				component={ReelScreen}
+				options={{
+					tabBarIcon: ({ focused, color }) => {
+						if (focused) {
+							return <ReelFilled size={30} fill={color} />
+						} else {
+							return <Reel size={30} fill={color} />
+						}
+					}
+				}}
 			/>
 			<Tab.Screen
 				name="shop"
 				component={ShopScreen}
+				options={{
+					tabBarIcon: ({ focused, color }) => {
+						if (focused) {
+							return <ShopFilled size={30} fill={color} />
+						} else {
+							return <Shop size={30} fill={color} />
+						}
+					}
+				}}
 			/>
 			<Tab.Screen
 				name="profile"
@@ -66,7 +90,9 @@ function Screens() {
 				options={{
 					tabBarIcon: ({ focused, color }) => (
 						<Image
-							style={{width: 25, height: 25, borderWidth: 2, borderColor: 'transparent', borderRadius: 21}}
+							style={[styles.tabProfile, {
+								borderColor: focused ? '#000' : 'transparent'
+							}]}
 							source={{
 								uri: 'https://pbs.twimg.com/profile_images/1285244895058419719/GhkRL0Au_400x400.jpg'
 							}}

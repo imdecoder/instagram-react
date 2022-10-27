@@ -1,8 +1,14 @@
 import { StyleSheet } from 'react-native';
-import COLORS from '../consts/Color';
+import colors from '../consts/Colors';
 
-const STYLES = StyleSheet.create({
-	
+const styles = StyleSheet.create({
+	tabProfile: {
+		width: 25,
+		height: 25,
+		borderWidth: 1,
+		borderColor: 'transparent',
+		borderRadius: 21
+	}
 });
 
-export default STYLES;
+export default styles;
