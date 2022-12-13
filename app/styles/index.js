@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
 	tabProfile: {
 		width: 25,
 		height: 25,
-		borderWidth: 1,
+		borderWidth: 2,
 		borderColor: 'transparent',
 		borderRadius: 21
 	}

@@ -13,7 +13,7 @@ function Stories() {
 				showsHorizontalScrollIndicator={false}
 			>
 				{stories.map(story => (
-					<View style={styles.story}>
+					<View style={styles.story} key={story.id}>
 						<LinearGradient
 							colors={['#de0046', '#f7a34b']}
 							style={styles.cover}

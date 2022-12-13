@@ -216,7 +216,6 @@ function Plus({size, fill, ...props}) {
 			<Rect
 				width="24"
 				height="24"
-				fill="white"
 			/>
 			<Rect
 				x="3"

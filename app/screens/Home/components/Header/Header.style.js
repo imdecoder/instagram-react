@@ -5,9 +5,9 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'space-between',
-		height: 36,
-		paddingHorizontal: 15,
-		marginVertical: 8
+		height: 44,
+		backgroundColor: '#fff',
+		paddingHorizontal: 15
 	},
 	actions: {
 		flexDirection: 'row'
