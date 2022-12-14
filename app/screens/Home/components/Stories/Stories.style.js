@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
 		borderRadius: 60
 	},
 	username: {
+		color: '#000',
 		fontSize: 12
 	}
 });

@@ -64,6 +64,9 @@ function Post({post}) {
 					wrapperStyle={{
 						marginBottom: 7
 					}}
+					style={{
+						color: '#000'
+					}}
 					seeMoreStyle={{
 						color: '#999'
 					}}
