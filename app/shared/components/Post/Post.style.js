@@ -22,12 +22,14 @@ const styles = StyleSheet.create({
 		fontSize: 14,
 		fontWeight: '600'
 	},
+	content: {
+		paddingHorizontal: 15
+	},
 	actions: {
 		flexDirection: 'row',
 		justifyContent: 'space-between',
 		alignItems: 'center',
-		height: 40,
-		paddingHorizontal: 15
+		height: 40
 	},
 	leftActions: {
 		flexDirection: 'row',
@@ -38,6 +40,22 @@ const styles = StyleSheet.create({
 	},
 	likes: {
 		fontWeight: '600'
+	},
+	contentUsername: {
+		fontWeight: '600'
+	},
+	comments: {
+		fontWeight: '500',
+		opacity: .5
+	},
+	date: {
+		fontSize: 13,
+		opacity: .5
+	},
+	translation: {
+		fontSize: 13,
+		fontWeight: '500',
+		marginLeft: 10
 	}
 });
 

@@ -10,8 +10,10 @@
 		"lint": "eslint ."
 	},
 	"dependencies": {
+		"@fawazahmed/react-native-read-more": "^2.3.7",
 		"@react-navigation/bottom-tabs": "^6.4.0",
 		"@react-navigation/native": "^6.0.13",
+		"dayjs": "^1.11.7",
 		"react": "18.1.0",
 		"react-native": "0.70.4",
 		"react-native-linear-gradient": "^2.6.2",
