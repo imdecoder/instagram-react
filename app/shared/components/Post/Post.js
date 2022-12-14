@@ -20,7 +20,7 @@ import {
 
 function Post({post}) {
 	return (
-		<View>
+		<View style={styles.post}>
 			<View style={styles.header}>
 				<View style={styles.user}>
 					<Image

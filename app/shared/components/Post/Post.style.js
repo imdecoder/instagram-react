@@ -1,6 +1,9 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+	post: {
+		marginBottom: 30
+	},
 	header: {
 		flexDirection: 'row',
 		alignItems: 'center',

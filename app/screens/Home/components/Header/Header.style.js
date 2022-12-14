@@ -14,6 +14,24 @@ const styles = StyleSheet.create({
 	},
 	button: {
 		marginLeft: 20
+	},
+	dotContainer: {
+		alignItems: 'center',
+		justifyContent: 'center',
+		position: 'absolute',
+		top: 0,
+		right: 0,
+		width: 11,
+		height: 11,
+		backgroundColor: '#fff',
+		borderRadius: 13,
+		zIndex: 2
+	},
+	dot: {
+		width: 8,
+		height: 8,
+		backgroundColor: '#fe3650',
+		borderRadius: 9
 	}
 });
 

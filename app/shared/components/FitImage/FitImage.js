@@ -1,9 +1,14 @@
+import { useState } from 'react';
 import { Image, Dimensions } from 'react-native';
 
 function FitImage({src}) {
-	const width = Dimensions.get('window').width;
-	const ratio = 1080 / width;
-	const height = 607 / ratio;
+	const [height, setHeight] = useState(0);
+	const screenWidth = Dimensions.get('window').width;
+
+	Image.getSize(src, (width, height) => {
+		const ratio = width / screenWidth;
+		setHeight(height / ratio);
+	});
 
 	return (
 		<Image
@@ -11,7 +16,7 @@ function FitImage({src}) {
 				uri: src
 			}}
 			style={{
-				width,
+				width: screenWidth,
 				height
 			}}
 		/>
